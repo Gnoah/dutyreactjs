@@ -13,17 +13,18 @@ class App extends Component {
   render() {
     return (
         <Router>
-              <div>
+           <div>
+              <div class="body">
                 <nav>
                   <ul>
                     <li>
-                      <Link to="/acceuil">Acceuil</Link>
+                      <Link className="col" to="/acceuil">Acceuil</Link>
                     </li>
                     <li>
-                      <Link to="/about">apropos</Link>
+                      <Link className="col" to="/about">apropos</Link>
                     </li>
                     <li>
-                      <Link to="/contact">contact</Link>
+                      <Link className="col" to="/contact">contact</Link>
                     </li>
                   </ul>
                 </nav>
@@ -32,6 +33,8 @@ class App extends Component {
                 <Route path="/acceuil" component={Home} />
                 <Route path="/about" component={About} />
                 <Route path="/contact" component={Contact} />
+              </div>
+                <footer>footer</footer>              
               </div>
         </Router>
     );
